@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Playground</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <main>
+     <h1>Ankieta</h1>
+     <form method="post" action="http://dev.cotenfrontend.pl" class="form">
+    <p>
+        <label for="firstName">Twoje imię</label>
+        <input required class="form__item" type="text" placeholder="wpisz swoje imię" id="firstName" name="firstName">
+    </p>
+     <p>
+        <label for="lastName">Twoje nazwisko</label>
+        <input class="form__item" type="text" placeholder="wpisz swoje nazwisko" id="lasttName" name="lastName">    
+     </p>
+     <p>
+        <label for="favouriteClub">Twoja ulubiona drużyna</label>
+        <input required class="form__item" type="text" placeholder="Twoja ulubiona drużyna" id="favouriteClub" name="favouriteClub">    
+     </p>
+     <p>
+        <label for="favouritePlayer">Twój ulubiony piłkarz</label>
+        <input required class="form__item" type="text" placeholder="Twój ulubiony piłkarz" id="favouritePlayer" name="favouritePlayer">
+    </p>
+
+    <fieldset>
+        <legend>Adres</legend>
+    <p>
+        <label for="streetName">Ulica</label>
+        <input class="form__item" type="text" placeholder="wpisz ulicę" id="firstName" name="streetName">    
+    </p>
+    <p>
+        <label for="city">Miasto</label>
+        <input class="form__item" type="text" placeholder="wpisz miasto zamieszkania" id="firstName" name="city">    
+    </p>
+    
+</fieldset>
+
+    <fieldset>
+        <legend>Na jakiej pozycji gra Twój ulubiony piłkarz</legend>
+    <p>
+        <label><input name="playerPosition" type="radio" value="goalkeeper">Bramkarz</label> 
+    </p>
+    <p>
+        <label><input name="playerPosition" type="radio" value="defender">Obrońca</label> 
+    </p>
+    <p>
+        <label><input name="playerPosition" type="radio" value="midefielder">Pomocnik</label> 
+    </p>
+    <p>
+        <label><input name="playerPosition" type="radio" value="forward">Napastnik</label> 
+    </p>
+</fieldset>
+
+    <p>
+        <label><input name="agreement" type="checkbox" value="agree">Czy Twój ulubiony piłkarz jest kapitanem?</label>
+    </p>
+    <p>
+        <label for="playerNumber">Numer z jakim gra ten zawodnik
+        <input class="form__item" type="number" placeholder="Numer wybranego zawodnika" id="playerNumber" name="playerNumber">    
+        </label>
+    </p>
+  
+    <p>
+        <label>Jaką notę (od 1 do 10) wystawisz mu za grę w obecnym sezonie?
+        <input class="form__item" type="range" id="range" name="range" min="1" max="10" step="1">    
+        </label>
+    </p>
+
+    <p>
+        <label for="league">W jakiej lidze gra Twoja ulubiona drużyna?</label>
+        <select>
+            <option>polska</option>
+            <option>angielska</option>
+            <option>hiszpańska</option>
+            <option>włoska</option>
+            <option>francuska</option>
+            <option>inna</option>
+        </select>
+    </p>
+
+    <p>
+        <input name="submit" type="submit" value="wyślij">
+    </p>
+
+</form>
+ </main>   
+</body>
+</html>

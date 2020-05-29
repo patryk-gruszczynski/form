@@ -1,0 +1,17 @@
+body {
+background: #861d1d;
+color: antiquewhite;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+.form {
+
+}
+
+.form__item {
+    display: block;
+    width: 100%;
+}
